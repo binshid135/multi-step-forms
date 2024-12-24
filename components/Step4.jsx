@@ -7,7 +7,7 @@ const Step4 = () => {
         <div className="p-5">
             <h1 className="font-bold text-2xl dark:text-white">Review and Submit</h1>
             <div className="flex flex-col space-y-5 mt-6">
-                
+
                 <div className="bg-gray-100 dark:bg-[#333] p-4 rounded-lg shadow-lg">
                     <h2 className="font-semibold text-lg dark:text-white">Personal Info</h2>
                     <div className="mt-4 space-y-2">
@@ -39,7 +39,9 @@ const Step4 = () => {
                 </div>
 
                 <button className="mt-10 py-3 px-4 rounded-lg bg-black text-white
-                    hover:bg-gray-800 focus:outline-none dark:bg-[#333] dark:hover:bg-[#555] transition duration-200 ease-in-out transform hover:scale-105">
+                    hover:bg-gray-800 focus:outline-none  dark:bg-white
+                     dark:text-black 
+                     dark:hover:bg-[#555] transition duration-200 ease-in-out transform hover:scale-105">
                     submit
                 </button>
             </div>

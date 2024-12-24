@@ -51,7 +51,8 @@ const Step2 = () => {
                 />
 
                 <button className="mt-10 py-3 px-2 rounded-lg bg-black text-white
-                    hover:bg-gray-800 focus:outline-none dark:bg-[#333] dark:hover:bg-[#555]">
+                    hover:bg-gray-800 focus:outline-none  dark:bg-white
+                     dark:text-black  dark:hover:bg-[#555]">
                     Continue
                 </button>
             </div>

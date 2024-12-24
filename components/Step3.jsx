@@ -63,7 +63,8 @@ const Step3 = () => {
                 </div>
 
                 <button className="mt-10 py-3 px-4 rounded-lg bg-black text-white
-                    hover:bg-gray-800 focus:outline-none dark:bg-[#333] dark:hover:bg-[#555] transition duration-200 ease-in-out transform hover:scale-105">
+                    hover:bg-gray-800 focus:outline-none  dark:bg-white
+                     dark:text-black  dark:hover:bg-[#555] transition duration-200 ease-in-out transform hover:scale-105">
                     Continue
                 </button>
             </div>
