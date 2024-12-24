@@ -13,7 +13,7 @@ const useStore = create((set) => ({
   address: {
     streetAddress: '',
     city: '',
-    state: '',
+    State: '',
     postalCode: '',
   },
   preferences: {
@@ -28,8 +28,8 @@ const useStore = create((set) => ({
   setPersonalInfo: (firstName, lastName, dob, email) => set((state) => ({
     personalInfo: { ...state.personalInfo, firstName, lastName, dob, email },
   })),
-  setAddress: (streetAddress, city, state, postalCode) => set((state) => ({
-    address: { ...state.address, streetAddress, city, state, postalCode },
+  setAddress: (streetAddress, city, State, postalCode) => set((state) => ({
+    address: { ...state.address, streetAddress, city, State, postalCode },
   })),
   setPreferences: (newsletter, emailNotifications, smsNotifications, theme) => set((state) => ({
     preferences: { ...state.preferences, newsletter, emailNotifications, smsNotifications, theme },
