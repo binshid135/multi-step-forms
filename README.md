@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Multi-Step Form with Real-Time Collaboration (Frontend Only)
+This project implements a multi-step form with real-time collaboration using Next.js, Tailwind CSS, Zustand/Redux (or Context API), and ShadCN UI. The form allows users to fill in personal information, address details, preferences, and review their inputs before submitting.
 
-## Getting Started
+Tech Stack
+Next.js – React-based framework for server-rendered apps.
+Tailwind CSS – Utility-first CSS framework for custom styles.
+Zustand/Redux (or Context API) – State management library.
+ShadCN UI – Pre-built UI components for React.
+Framer Motion – Animations for smoother UI transitions.
+Features
+Dark Mode Toggle: Switch between light and dark themes.
+Multi-Step Form: Allows users to progress through multiple steps:
+Step 1: Personal Information
+Step 2: Address Details
+Step 3: Preferences
+Step 4: Review & Submit
+State Management: Utilizes Zustand/Redux (or Context API) for maintaining form state across steps.
+Form Validation: Client-side validation to ensure required fields are filled and correct format is followed (e.g., email validation).
+Step-by-Step Implementation
+Step 1: Setting Up the Project
+Initialize the Project:
 
-First, run the development server:
+Create a new Next.js application.
+Set up Tailwind CSS with the dark mode class strategy.
+Install ShadCN UI for UI components.
+Basic Layout:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Set up a layout component with a header, main content area, and footer.
+Add a dark mode toggle to switch between themes.
+Install Dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install libraries like Zustand (or Redux), ShadCN UI, and Framer Motion.
+bash
+Copy code
+# Initialize Next.js project
+npx create-next-app@latest multi-step-form
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Install Tailwind CSS
+npm install tailwindcss postcss autoprefixer
+npx tailwindcss init
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Install ShadCN UI
+npm install @shadcn/ui
 
-## Learn More
+# Install Zustand (or Redux)
+npm install zustand
 
-To learn more about Next.js, take a look at the following resources:
+# Install Framer Motion
+npm install framer-motion
+Step 2: Multi-Step Form Layout
+Form Navigation:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Use ShadCN UI’s Tabs component (or a custom stepper) for step navigation.
+Create Static Form Steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Step 1: Personal Information (text inputs).
+Step 2: Address Details (address fields).
+Step 3: Preferences (checkboxes or toggle inputs).
+Step 4: Review & Submit (summary of inputs).
+Visibility of Navigation:
 
-## Deploy on Vercel
+Ensure the current step is visually highlighted using ShadCN UI components.
+Step 3: Form State Management
+Global State:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Set up Zustand/Redux (or Context API) to manage form data.
+State Integration:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ensure form state is updated dynamically as users enter data.
+Persist state across different form steps.
+Form Validation:
+
+Implement client-side validation for inputs (e.g., email format, required fields).
+Show real-time validation errors.
